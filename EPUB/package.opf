@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package version="3.0"
+	 unique-identifier="pub-identifier"
+	 xml:lang="en"
+	 xmlns="http://www.idpf.org/2007/opf"
+	 xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:dcterms="http://purl.org/dc/terms/">
+  <metadata>
+    <dc:identifier id="pub-identifier">myuniqueidentifier</dc:identifier>
+    <dc:title id="pub-title">My Hand-Crafted EPUB3</dc:title>
+    <dc:language id="pub-language">en</dc:language>
+    <meta property="dcterms:modified">2012-10-24T15:30:00Z</meta>
+  </metadata>
+  <manifest>
+    <item id="htmltoc" properties="nav" media-type="application/xhtml+xml"
+	  href="toc.xhtml"/>
+    <item media-type="text/css" id="epub-css" href="css/epub.css"/>
+    <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="cover-image" properties="cover-image"
+	  href="covers/nypl.digitalcollections.510d47df-f3c6-a3d9-e040-e00a18064a99.001.w.jpg" media-type="image/jpeg"/>
+    <item id="ch01" href="ch01.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch02" href="ch02.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine>
+    <itemref idref="cover" linear="no"/>
+    <itemref idref="htmltoc" linear="yes"/>
+    <itemref idref="ch01"/>
+    <itemref idref="ch02"/>
+  </spine>
+</package>
